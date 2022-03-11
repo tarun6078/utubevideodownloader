@@ -17,7 +17,7 @@ if not os.path.exists(newpath):
 def download():
     yt = YouTube(e1.get())
     yt1 = yt.streams.get_by_resolution(c1.get())
-    showinfo("Notification" , "Downloadinf the Video")
+    showinfo("Notification" , "Downloading the Video")
     yt1.download(newpath)
     showinfo("NOtification" , "Downloaded the Video in C:\Downloaded Videos")
 
